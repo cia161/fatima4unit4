@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima Ahmed for School Board</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fff8f0 0%, #f0f9ff 100%);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        h1 {
+            color: #f97316;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .coming-soon {
+            background-color: #0ea5e9;
+            color: white;
+            padding: 1.5rem 2.5rem;
+            border-radius: 2rem;
+            box-shadow: 0 8px 16px rgba(14, 165, 233, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .coming-soon:hover {
+            transform: scale(1.02);
+        }
+
+        .coming-soon p {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        .decorative-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+
+        .circle-1 {
+            background-color: #f97316;
+            width: 100px;
+            height: 100px;
+            top: 20%;
+            left: 20%;
+        }
+
+        .circle-2 {
+            background-color: #0ea5e9;
+            width: 150px;
+            height: 150px;
+            bottom: 20%;
+            right: 20%;
+        }
+
+        .stars {
+            position: absolute;
+            font-size: 1.5rem;
+            color: #f97316;
+            opacity: 0.6;
+        }
+
+        .star-1 { top: 15%; right: 25%; }
+        .star-2 { top: 25%; left: 30%; }
+        .star-3 { bottom: 20%; left: 25%; }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .coming-soon p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="decorative-elements">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="stars star-1">✨</div>
+        <div class="stars star-2">⭐</div>
+        <div class="stars star-3">✨</div>
+    </div>
+    <div class="container">
+        <h1>Fatima Ahmed<br>for School Board 📚</h1>
+        <div class="coming-soon">
+            <p>✨ More information coming soon! ✨</p>
+        </div>
+    </div>
+</body>
+</html>
